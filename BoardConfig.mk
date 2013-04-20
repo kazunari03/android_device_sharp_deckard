@@ -3,6 +3,8 @@ USE_CAMERA_STUB := true
 # inherit from the proprietary version
 -include vendor/sharp/is01/BoardConfigVendor.mk
 
+TARGET_SPECIFIC_HEADER_PATH := device/sharp/is01/include
+
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := qsd8k
 TARGET_CPU_ABI := armeabi-v7a
