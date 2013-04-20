@@ -19,6 +19,15 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, build/target/product/full.mk)
 
+# Recovery
+PRODUCT_COPY_FILES += \
+    device/sharp/is01/tools/arm/strace:recovery/root/sbin/strace
+
+
+PRODUCT_COPY_FILES += \
+    device/sharp/is01/tools/arm/strace:system/xbin/strace
+
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_is01
 PRODUCT_DEVICE := is01
