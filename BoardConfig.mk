@@ -1,9 +1,9 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/sharp/is01/BoardConfigVendor.mk
+-include vendor/sharp/deckard/BoardConfigVendor.mk
 
-TARGET_SPECIFIC_HEADER_PATH := device/sharp/is01/include
+TARGET_SPECIFIC_HEADER_PATH := device/sharp/deckard/include
 
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := qsd8k
@@ -24,7 +24,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_PREBUILT_KERNEL := device/sharp/is01/kernel
+TARGET_PREBUILT_KERNEL := device/sharp/deckard/kernel
 
 #BOARD_HAS_NO_SELECT_BUTTON := true
 # Use this flag if the board has a ext4 partition larger than 2gb
